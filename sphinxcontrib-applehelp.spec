@@ -6,7 +6,7 @@
 #
 Name     : sphinxcontrib-applehelp
 Version  : 1.0.2
-Release  : 9
+Release  : 10
 URL      : https://files.pythonhosted.org/packages/9f/01/ad9d4ebbceddbed9979ab4a89ddb78c9760e74e6757b1880f1b2760e8295/sphinxcontrib-applehelp-1.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9f/01/ad9d4ebbceddbed9979ab4a89ddb78c9760e74e6757b1880f1b2760e8295/sphinxcontrib-applehelp-1.0.2.tar.gz
 Source1  : https://files.pythonhosted.org/packages/9f/01/ad9d4ebbceddbed9979ab4a89ddb78c9760e74e6757b1880f1b2760e8295/sphinxcontrib-applehelp-1.0.2.tar.gz.asc
@@ -51,7 +51,7 @@ python components for the sphinxcontrib-applehelp package.
 Summary: python3 components for the sphinxcontrib-applehelp package.
 Group: Default
 Requires: python3-core
-Provides: pypi(sphinxcontrib-applehelp)
+Provides: pypi(sphinxcontrib_applehelp)
 
 %description python3
 python3 components for the sphinxcontrib-applehelp package.
@@ -66,8 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583170321
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583451964
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
