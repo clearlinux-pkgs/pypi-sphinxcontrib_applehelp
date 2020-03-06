@@ -6,7 +6,7 @@
 #
 Name     : sphinxcontrib-applehelp
 Version  : 1.0.2
-Release  : 10
+Release  : 11
 URL      : https://files.pythonhosted.org/packages/9f/01/ad9d4ebbceddbed9979ab4a89ddb78c9760e74e6757b1880f1b2760e8295/sphinxcontrib-applehelp-1.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9f/01/ad9d4ebbceddbed9979ab4a89ddb78c9760e74e6757b1880f1b2760e8295/sphinxcontrib-applehelp-1.0.2.tar.gz
 Source1  : https://files.pythonhosted.org/packages/9f/01/ad9d4ebbceddbed9979ab4a89ddb78c9760e74e6757b1880f1b2760e8295/sphinxcontrib-applehelp-1.0.2.tar.gz.asc
@@ -26,6 +26,14 @@ BuildRequires : py-python
 BuildRequires : pytest
 BuildRequires : tox
 BuildRequires : virtualenv
+Provides: pypi(Pygments)
+Provides: pypi(Jinja2)
+Provides: pypi(sphinxcontrib-applehelp)
+Provides: pypi(sphinxcontrib-devhelp)
+Provides: pypi(sphinxcontrib-htmlhelp)
+Provides: pypi(sphinxcontrib-jsmath)
+Provides: pypi(sphinxcontrib-qthelp)
+Provides: pypi(sphinxcontrib-serializinghtml)
 
 %description
 sphinxcontrib-applehelp is a sphinx extension which outputs Apple help books
