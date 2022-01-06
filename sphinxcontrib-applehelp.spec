@@ -6,7 +6,7 @@
 #
 Name     : sphinxcontrib-applehelp
 Version  : 1.0.2
-Release  : 27
+Release  : 28
 URL      : https://files.pythonhosted.org/packages/9f/01/ad9d4ebbceddbed9979ab4a89ddb78c9760e74e6757b1880f1b2760e8295/sphinxcontrib-applehelp-1.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9f/01/ad9d4ebbceddbed9979ab4a89ddb78c9760e74e6757b1880f1b2760e8295/sphinxcontrib-applehelp-1.0.2.tar.gz
 Source1  : https://files.pythonhosted.org/packages/9f/01/ad9d4ebbceddbed9979ab4a89ddb78c9760e74e6757b1880f1b2760e8295/sphinxcontrib-applehelp-1.0.2.tar.gz.asc
@@ -16,16 +16,12 @@ License  : BSD-2-Clause
 Requires: sphinxcontrib-applehelp-license = %{version}-%{release}
 Requires: sphinxcontrib-applehelp-python = %{version}-%{release}
 Requires: sphinxcontrib-applehelp-python3 = %{version}-%{release}
-Requires: flake8
-Requires: mypy
 BuildRequires : buildreq-distutils3
-BuildRequires : flake8
-BuildRequires : mypy
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pytest
-BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(pluggy)
+BuildRequires : pypi(py)
+BuildRequires : pypi(pytest)
+BuildRequires : pypi(tox)
+BuildRequires : pypi(virtualenv)
 
 %description
 sphinxcontrib-applehelp is a sphinx extension which outputs Apple help books
@@ -66,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1603404698
+export SOURCE_DATE_EPOCH=1641428973
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
