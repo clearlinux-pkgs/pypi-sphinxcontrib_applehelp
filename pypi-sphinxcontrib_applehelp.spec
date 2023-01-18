@@ -6,7 +6,7 @@
 #
 Name     : pypi-sphinxcontrib_applehelp
 Version  : 1.0.3
-Release  : 38
+Release  : 39
 URL      : https://files.pythonhosted.org/packages/00/45/1973a8e0fae5a9b4fafd6c0523164622f8166d4f099c6616e6654bc07979/sphinxcontrib.applehelp-1.0.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/00/45/1973a8e0fae5a9b4fafd6c0523164622f8166d4f099c6616e6654bc07979/sphinxcontrib.applehelp-1.0.3.tar.gz
 Source1  : https://files.pythonhosted.org/packages/00/45/1973a8e0fae5a9b4fafd6c0523164622f8166d4f099c6616e6654bc07979/sphinxcontrib.applehelp-1.0.3.tar.gz.asc
@@ -55,6 +55,7 @@ Summary: python3 components for the pypi-sphinxcontrib_applehelp package.
 Group: Default
 Requires: python3-core
 Provides: pypi(sphinxcontrib.applehelp)
+Provides: pypi(sphinxcontrib_applehelp)
 
 %description python3
 python3 components for the pypi-sphinxcontrib_applehelp package.
@@ -72,7 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1674056483
+export SOURCE_DATE_EPOCH=1674057645
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
