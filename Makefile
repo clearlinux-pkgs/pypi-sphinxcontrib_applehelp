@@ -1,5 +1,5 @@
 PKG_NAME := pypi-sphinxcontrib_applehelp
-URL = https://files.pythonhosted.org/packages/9f/01/ad9d4ebbceddbed9979ab4a89ddb78c9760e74e6757b1880f1b2760e8295/sphinxcontrib-applehelp-1.0.2.tar.gz
+URL = https://files.pythonhosted.org/packages/00/45/1973a8e0fae5a9b4fafd6c0523164622f8166d4f099c6616e6654bc07979/sphinxcontrib.applehelp-1.0.3.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
