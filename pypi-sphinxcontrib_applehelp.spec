@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x52C8F72A61F0FB52 (9087854+aa-turner@users.noreply.github.com)
 #
 Name     : pypi-sphinxcontrib_applehelp
-Version  : 1.0.3
-Release  : 39
-URL      : https://files.pythonhosted.org/packages/00/45/1973a8e0fae5a9b4fafd6c0523164622f8166d4f099c6616e6654bc07979/sphinxcontrib.applehelp-1.0.3.tar.gz
-Source0  : https://files.pythonhosted.org/packages/00/45/1973a8e0fae5a9b4fafd6c0523164622f8166d4f099c6616e6654bc07979/sphinxcontrib.applehelp-1.0.3.tar.gz
-Source1  : https://files.pythonhosted.org/packages/00/45/1973a8e0fae5a9b4fafd6c0523164622f8166d4f099c6616e6654bc07979/sphinxcontrib.applehelp-1.0.3.tar.gz.asc
+Version  : 1.0.4
+Release  : 40
+URL      : https://files.pythonhosted.org/packages/32/df/45e827f4d7e7fcc84e853bcef1d836effd762d63ccb86f43ede4e98b478c/sphinxcontrib-applehelp-1.0.4.tar.gz
+Source0  : https://files.pythonhosted.org/packages/32/df/45e827f4d7e7fcc84e853bcef1d836effd762d63ccb86f43ede4e98b478c/sphinxcontrib-applehelp-1.0.4.tar.gz
+Source1  : https://files.pythonhosted.org/packages/32/df/45e827f4d7e7fcc84e853bcef1d836effd762d63ccb86f43ede4e98b478c/sphinxcontrib-applehelp-1.0.4.tar.gz.asc
 Summary  : sphinxcontrib-applehelp is a Sphinx extension which outputs Apple help books
 Group    : Development/Tools
 License  : BSD-2-Clause
@@ -17,8 +17,8 @@ Requires: pypi-sphinxcontrib_applehelp-license = %{version}-%{release}
 Requires: pypi-sphinxcontrib_applehelp-python = %{version}-%{release}
 Requires: pypi-sphinxcontrib_applehelp-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-BuildRequires : pypi(flit_core)
 BuildRequires : pypi(py)
+BuildRequires : pypi(setuptools)
 BuildRequires : pypi-pluggy
 BuildRequires : pypi-pytest
 BuildRequires : pypi-tox
@@ -54,7 +54,7 @@ python components for the pypi-sphinxcontrib_applehelp package.
 Summary: python3 components for the pypi-sphinxcontrib_applehelp package.
 Group: Default
 Requires: python3-core
-Provides: pypi(sphinxcontrib.applehelp)
+Provides: pypi(sphinxcontrib_applehelp)
 Provides: pypi(sphinxcontrib_applehelp)
 
 %description python3
@@ -62,10 +62,10 @@ python3 components for the pypi-sphinxcontrib_applehelp package.
 
 
 %prep
-%setup -q -n sphinxcontrib.applehelp-1.0.3
-cd %{_builddir}/sphinxcontrib.applehelp-1.0.3
+%setup -q -n sphinxcontrib-applehelp-1.0.4
+cd %{_builddir}/sphinxcontrib-applehelp-1.0.4
 pushd ..
-cp -a sphinxcontrib.applehelp-1.0.3 buildavx2
+cp -a sphinxcontrib-applehelp-1.0.4 buildavx2
 popd
 
 %build
@@ -73,7 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1674057645
+export SOURCE_DATE_EPOCH=1674495833
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
@@ -95,7 +95,7 @@ popd
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-sphinxcontrib_applehelp
-cp %{_builddir}/sphinxcontrib.applehelp-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-sphinxcontrib_applehelp/50d2292390ae54694468ea4c35b53bb06a646e77 || :
+cp %{_builddir}/sphinxcontrib-applehelp-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-sphinxcontrib_applehelp/50d2292390ae54694468ea4c35b53bb06a646e77 || :
 pip install --root=%{buildroot} --no-deps --ignore-installed dist/*.whl
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
