@@ -5,7 +5,7 @@
 #
 Name     : pypi-sphinxcontrib_applehelp
 Version  : 1.0.7
-Release  : 44
+Release  : 45
 URL      : https://files.pythonhosted.org/packages/1c/5a/fce19be5d4db26edc853a0c34832b39db7b769b7689da027529767b0aa98/sphinxcontrib_applehelp-1.0.7.tar.gz
 Source0  : https://files.pythonhosted.org/packages/1c/5a/fce19be5d4db26edc853a0c34832b39db7b769b7689da027529767b0aa98/sphinxcontrib_applehelp-1.0.7.tar.gz
 Summary  : sphinxcontrib-applehelp is a Sphinx extension which outputs Apple help books
